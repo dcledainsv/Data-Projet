@@ -5,3 +5,85 @@
 }
 
 
+
+
+
+
+/* ############################################################ */
+
+/* ********** HEADER ********** */
+header
+{
+	width: 100%;
+	height: 120px;
+	display: flex;
+}
+
+
+/* Menu déroulant du header */
+nav
+{
+	display: flex;
+	justify-content: center;
+}
+
+nav > ul:after
+{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav > ul > li
+{
+	position: relative;
+}
+
+nav li
+{
+	list-style-type: none;
+}
+
+/* Gestion affichage des sous-élements */
+
+.submenu
+{
+	display: none;
+	border-radius: 15px;
+	width: 250px;
+}
+
+nav li:hover .submenu /* réafficher au survol */
+{
+	background-color: rgba(113, 39, 39, 0.8); /* #712727 */
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	right: 0%;
+	padding: 0;
+	padding-left: 10%;
+}
+
+
+ .submenu li a
+{
+	text-decoration: none;
+	font-size: 0.8em;
+	color: rgba(157, 191, 21);
+}
+/* ############################################################ */
+
+/* ********** FOOTER ********** */
+footer
+{
+	background-color: #9DBF15;
+	position: absolute;
+	bottom: 0;
+	height: 35px;
+	width: 100%;
+	font-size: 0.6em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* ############################################################ */

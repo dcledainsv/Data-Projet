@@ -1,5 +1,5 @@
 <header>
-	<img src="" alt="Titre du site et logo">
+	<img src="./../conception/Logo/logo bio miam horizon.png" alt="Titre du site et logo">
 
 	<nav>
 		<ul>
