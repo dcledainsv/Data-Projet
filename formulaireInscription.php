@@ -174,7 +174,7 @@ function test_input($data) {
   return $data;
 }
 ?>
-
+<!-- vérif récupération -->
 <?php
     echo $pseudo;
     echo "<br>";
