@@ -1,10 +1,10 @@
 <header>
-	<img src="./../conception/Logo/logo-bio-miam-horizon.png" alt="Titre du site et logo">
+	<img src="./img/logo-bio-miam-horizon.png" alt="Titre du site et logo" class="logo-header">
 
 	<nav>
 		<ul>
 			<li>
-				<img src="https://image.flaticon.com/icons/png/128/56/56763.png">
+				<img src="./img/menu-hamburger.png">
 				
 				<ul class="submenu">
 					<li><a href="">Accueil</a></li>
