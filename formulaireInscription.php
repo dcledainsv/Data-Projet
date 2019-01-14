@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style-inscription.css">
-    <link rel="stylesheet" href="style.css">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/style-inscription.css">
+		<title>Formulaire d'inscription</title>
+	</head>
 
-    <title>Inscription</title>
-</head>
-<body>
-<?php include("./annexes/header.php"); ?>
-
-    <section>
+	<body>
+		<header>
+			<?php include("./annexes/header.php"); ?>
+		</header>
+		
+		<section>
         <h1>Informations personnelles</h1>
             <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
                 <input type="text" name="pseudo" value="<?php echo $pseudo;?>" placeholder="Pseudo">
@@ -199,6 +201,11 @@ function test_input($data) {
     echo $activite;
 ?>
 
-<?php include("./annexes/footer.php") ?>
+</section>
+
+<footer>
+  <?php include("./annexes/footer.php") ?>
+</footer>
+
 </body>
 </html>
