@@ -1,0 +1,25 @@
+.logo-web-paragraph
+{
+	width: 25%;
+}
+
+section p
+{
+	text-align: justify;
+	margin-top: 10%;
+	font-size: 0.95em;
+}
+
+#logo-bas
+{
+	display: flex;
+	width: 96%;
+	justify-content: space-between;
+	position: absolute;
+	bottom: 10%;
+}
+
+#logo-bas > img
+{
+	width: 22%;
+}
