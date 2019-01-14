@@ -13,15 +13,14 @@ section p
 {
 	margin-top: 10%;
 	text-align: justify;
-	font-size: 1.7em;
+	font-size: 1.5em;
 }
 
 #logo-bas
 {
-	margin-top: 30%;
 	display: flex;
-	justify-content: space-around;
 	width: 100%;
+	margin-top: 10%;
 }
 
 #logo-bas > div

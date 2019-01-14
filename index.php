@@ -8,8 +8,10 @@
 	</head>
 
 	<body>
-		<?php include("./annexes/header.php"); ?>
-
+		<header>
+			<?php include("./annexes/header.php"); ?>
+		</header>
+		
 		<section>
 			<div>
 				<img src="./img/ferme.png" alt="Bannière d'image du site" class="image-banner">
@@ -35,6 +37,8 @@
 			</div>
 		</section>
 
-		<?php include("./annexes/footer.php") ?>
+		<footer>
+			<?php include("./annexes/footer.php") ?>
+		</footer>
 	</body>
 </html>
