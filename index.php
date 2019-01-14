@@ -21,9 +21,17 @@
 			</div>
 
 			<div id="logo-bas">
-				<img src="./img/nutri-a.png">
-				<img src="./img/logo-bio.png">
-				<img src="./img/nutri-b.png">
+				<div>
+					<img src="./img/nutri-a.png">
+				</div>
+
+				<div>
+					<img src="./img/logo-bio.png">
+				</div>
+				
+				<div>
+					<img src="./img/nutri-b.png">
+				</div>
 			</div>
 		</section>
 

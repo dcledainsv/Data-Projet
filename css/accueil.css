@@ -1,25 +1,36 @@
 .logo-web-paragraph
 {
-	width: 25%;
+	width: 22%;
+}
+
+section > div:nth-child(2)
+{
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 section p
 {
-	text-align: justify;
 	margin-top: 10%;
-	font-size: 0.95em;
+	text-align: justify;
+	font-size: 1.7em;
 }
 
 #logo-bas
 {
+	margin-top: 30%;
 	display: flex;
-	width: 96%;
-	justify-content: space-between;
-	position: absolute;
-	bottom: 10%;
+	justify-content: space-around;
+	width: 100%;
 }
 
-#logo-bas > img
+#logo-bas > div
 {
-	width: 22%;
+	width: 100%;
+	text-align: center;
+}
+
+#logo-bas > div > img
+{
+	width: 60%;
 }

@@ -4,7 +4,7 @@
 	<nav>
 		<ul>
 			<li>
-				<img src="./img/menu-hamburger.png">
+				<img src="./img/menu-hamburger.png" class="menu-hamb-logo">
 				
 				<ul class="submenu">
 					<li><a href="">Accueil</a></li>
