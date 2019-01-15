@@ -7,7 +7,7 @@
 		<title>Accueil</title>
 		<?php 
     	/* Liaison BDD */
-    	include('base/base-pdo.php'); 
+    	include('request/log-bdd.php'); 
     	?>
 	</head>
 
