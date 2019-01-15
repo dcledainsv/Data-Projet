@@ -31,6 +31,13 @@ body
 	margin: auto;
 }
 
+h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #712727;
+}
 
 /* ############################################################ */
 
