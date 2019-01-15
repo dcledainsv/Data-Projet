@@ -1,5 +1,5 @@
 <p>
-	Copyright&copy; - 
+	Copyright &copy; - 
 	<a href="">Mentions Légales</a> -
 	<a href="">A propos</a>
 </p>
