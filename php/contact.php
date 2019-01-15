@@ -2,13 +2,13 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
-        <link rel="stylesheet" type="text/css" href="./css/contact.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/contact.css">
 		<title>Accueil</title>
 	</head>
 
 	<body>
-		<?php include("./annexes/header.php"); ?>
+		<?php include("../include/header.php"); ?>
 
 		<section>
                 <form method="post" action="<?php echo strip_tags($_SERVER['REQUEST_URI']); ?>">
@@ -66,6 +66,6 @@
                 ?>
 		</section>
 
-		<?php include("./annexes/footer.php") ?>
+		<?php include("../include/footer.php") ?>
 	</body>
 </html>

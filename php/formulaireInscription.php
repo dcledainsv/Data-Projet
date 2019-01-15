@@ -2,13 +2,13 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style-inscription.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style-inscription.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <title>Inscription</title>
 </head>
 <body>
-<?php include("./annexes/header.php"); ?>
+<?php include("../include/header.php"); ?>
 
     <section>
         <h1>Informations personnelles</h1>
@@ -199,6 +199,6 @@ function test_input($data) {
     echo $activite;
 ?>
 
-<?php include("./annexes/footer.php") ?>
+<?php include("../include/footer.php") ?>
 </body>
 </html>
