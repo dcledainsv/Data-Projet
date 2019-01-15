@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
-		<link rel="stylesheet" type="text/css" href="./css/style-inscription.css">
+    <link rel="stylesheet" type="text/css" href="./css/style_inscription.css">
+
 		<title>Formulaire d'inscription</title>
 	</head>
 
@@ -40,10 +41,9 @@
                 <input type="date" name="dateDeNaissance" value="<?php echo $dateDeNaissance;?>"placeholder="Date de naissance">
                 <span class="error"><?php echo $dateDeNaissanceErr;?></span>
                 <br><br>
-                Sexe:
-                <input type="radio" name="sexe" <?php if (isset($sexe) && $sexe=="femme") echo "checked";?> value="femme">Femme
+                Femme<input type="radio" name="sexe" <?php if (isset($sexe) && $sexe=="femme") echo "checked";?> value="femme">
                 <span class="error"><?php echo $sexeErr;?></span>
-                <input type="radio" name="sexe" <?php if (isset($sexe) && $sexe=="homme") echo "checked";?> value="homme">Homme
+                Homme<input type="radio" name="sexe" <?php if (isset($sexe) && $sexe=="homme") echo "checked";?> value="homme">
                 <span class="error"><?php echo $sexeErr;?></span>
                 <br><br>
                 <input type="number" name="taille" value="<?php echo $taille;?>"placeholder="Taille (cm)">

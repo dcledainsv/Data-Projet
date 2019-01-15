@@ -1,0 +1,28 @@
+body, ::placeholder {
+    color : #712727;
+    font-size: 3em;
+    text-align: center;
+
+}
+
+input {
+    justify-content: center;
+    width: 75%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section {
+    margin-top : 2rem;
+}
+
+form {
+    margin-top : 2rem;
+}
