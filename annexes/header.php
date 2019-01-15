@@ -10,8 +10,14 @@
 				<li><a href="">Mon Profil</a></li>
 				<li><a href="">Mes Menus</a></li>
 				<li><a href="./categories.php">Produits</a></li>
-				<li><a href="">Informations nutritionnelles</a></li>
+				<li><a href="">Blog</a></li>
+				<li><a href="">Contact</a></li>
 			</ul>		
 		</li>
+
 	</ul>
+
+	<div id="login">
+		<a href="">Conexion / inscription</a>
+	</div>
 </nav>

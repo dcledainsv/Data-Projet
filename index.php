@@ -26,6 +26,10 @@
 						</ul>		
 					</li>
 				</ul>
+
+				<div id="login">
+					<p>Connexion / <br/>Inscription</p>
+				</div>
 			</nav>
 		</header>
 		
@@ -56,10 +60,13 @@
 
 		<footer>
 			<p>
-				Copyright&copy; - 
+				Copyright &copy; - 
 				<a href="">Mentions Légales</a> -
 				<a href="">A propos</a>
 			</p>
 		</footer>
+
+		<?php include("./annexes/modale.php");?>
+		<script type="text/javascript" src="./js/script.js"></script>
 	</body>
 </html>

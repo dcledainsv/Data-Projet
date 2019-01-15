@@ -44,6 +44,7 @@ header
 	align-items: center;
 	background-color: white;
 	box-shadow: 0px 5px 15px brown;
+	margin-bottom: 50px;
 }
 
 .logo-header
@@ -59,13 +60,11 @@ header
 /* Menu déroulant du header */
 nav
 {
+	padding-top: 5%;
+	height: 100%;
 	display: flex;
 	justify-content: center;
-}
-
-nav a
-{
-	
+	flex-direction: column;
 }
 
 nav > ul:after
@@ -73,6 +72,7 @@ nav > ul:after
 	content: "";
 	display: block;
 	clear: both;
+
 }
 
 nav > ul > li
@@ -136,4 +136,85 @@ footer
 	text-align: center;
 	align-items: center;
 }
+/* ############################################################ */
+
+/* Connexion / inscription */
+
+#login
+{
+	padding-top: 5%;
+	font-size: 1.6em;
+}
+
+#login > p
+{
+	text-decoration: none;
+	color: #712727;
+	cursor: pointer;
+}
+
+/* ********** MODALE ********** */
+
+#modaleLog
+{
+	background-color: rgba(100,100,100, 0.9);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	display: none;
+}
+
+#log
+{
+	background-color: #D2FEEE;
+	background-image: url("./../img/ferme-modale.png");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	margin-top: 50%;
+	width: 85%;
+	height: 30%;
+	font-size: 1.6em;
+	font-weight: bold;
+	border: 2px solid black;
+	color: #712727;
+	display: none;
+}
+
+#log > form
+{
+	font-size: 1.5em;
+	width: 90%;
+	margin: auto;
+	padding-top: 5%;
+}
+
+#log > form > input
+{
+	font-size: 1.2em;
+	width: 100%;
+	height: 50px;
+	border-radius: 50px;
+	text-indent: 10%;
+}
+
+#log > div
+{
+	width: 90%;
+	margin: auto;
+	padding-top: 10%;
+}
+
+#log > div > p
+{
+	font-size: 1.5em;
+}
+
+#log a
+{
+	text-decoration: none;
+}
+
 /* ############################################################ */
