@@ -201,11 +201,15 @@ function test_input($data) {
     echo $activite;
 ?>
 
+<<<<<<< HEAD:formulaireInscription.php
 </section>
 
 <footer>
   <?php include("./annexes/footer.php") ?>
 </footer>
 
+=======
+<?php include("../include/footer.php") ?>
+>>>>>>> dev:php/formulaireInscription.php
 </body>
 </html>

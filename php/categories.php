@@ -10,7 +10,7 @@
 <body>
 
 <header>
-    <?php include("./header.php"); ?>
+    <?php include("../include/header.php"); ?>
 </header>
 
 <section>
@@ -105,7 +105,7 @@
 </section>
 
 <footer>
-    <?php include("./footer.php") ?>
+    <?php include("../include/footer.php") ?>
 </footer>
    <script src="../js/produits.js"></script> 
 </body>
