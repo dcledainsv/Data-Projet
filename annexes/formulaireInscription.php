@@ -42,15 +42,15 @@
             <br>
             <div class="bas">
                 <br>
-                Date de naissance 
-                <br>
-                <input type="date" name="dateDeNaissance" value="<?php echo $dateDeNaissance;?>"placeholder="Date de naissance">
+                <label>Date de naissance</label>
+                <input type="date" name="dateDeNaissance" value="<?php echo $dateDeNaissance;?>">
                 <span class="error"><?php echo $dateDeNaissanceErr;?></span>
                 <br><br>
-                Femme<input type="radio" name="sexe" <?php if (isset($sexe) && $sexe=="femme") echo "checked";?> value="femme">
+                <label for="femme">Femme</label>
+                <input type="radio" id="femme" class="radio" name="sexe" <?php if (isset($sexe) && $sexe=="femme") echo "checked";?> value="femme">
                 <span class="error"><?php echo $sexeErr;?></span>
-                <br><br>
-                Homme<input type="radio" name="sexe" <?php if (isset($sexe) && $sexe=="homme") echo "checked";?> value="homme">
+                <label for="homme">Homme</label>
+                <input type="radio" id="homme"class="radio" name="sexe" <?php if (isset($sexe) && $sexe=="homme") echo "checked";?> value="homme">
                 <span class="error"><?php echo $sexeErr;?></span>
                 <br><br>
                 <input type="number" class="input" name="taille" value="<?php echo $taille;?>"placeholder="Taille (cm)">

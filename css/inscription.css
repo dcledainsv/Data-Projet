@@ -1,14 +1,14 @@
-body, ::placeholder {
+section, ::placeholder {
     color : #712727;
-    font-size: 3em;
+    font-size: 1em;
     text-align: center;
 
 }
 
-.input {
+.input, option {
     justify-content: center;
     width: 80%;
-    height: 100px;
+    height: 2rempx;
     padding: 1rem 2rem;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -24,15 +24,29 @@ section {
 }
 
 form {
-    margin-top : 2rem;
+    margin-top : 1.5rem;
 }
 
 .haut, .bas {
     width: 90%;
     margin-top: 10px;
     margin-left: 5%;
-    border-radius: 10px;
+    border-radius: 20px;
     background-size: 100% 100%;
     border: 1px solid #712727;
-    box-shadow: 3px 3px 3px #712727;
+    box-shadow: 3px 2px 2px #712727;
+    background-color: white;
+}
+.haut {
+    margin-top: 2em ;
+}
+.radio {
+    height: 5em;
+    width: 5em ;
+}
+
+
+
+select {
+text-align: center;
 }
