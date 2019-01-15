@@ -1,0 +1,86 @@
+
+section{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #712727;
+}
+
+.categorie{
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 5%;
+    border-radius: 10px;
+    background-size: 100% 100%;
+    border: 1px solid #712727;
+    box-shadow: 3px 3px 3px #712727;
+}
+
+
+/* images de fond des catégories */
+#fruits{
+    background-image: url(../img/fruits_40.png);
+}
+#cereales{
+    background-image: url(../img/céréales_40.jpeg);
+}
+#viandes{
+    background-image: url(../img/viande_40.jpg);
+}
+#lait{
+    background-image: url(../img/produitLaitiers_40.jpeg);
+}
+#boissons{
+    background-image: url(../img/boissons_40.jpeg);
+}
+#presentation{
+    background-image: url(../img/platsPréparés_40.jpeg);
+}
+
+
+h2{
+    background-color: #712727;
+    color: #9dbf15;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    line-height: 50px;
+}
+
+.liste{
+    margin-left: 15%;
+    
+}
+.categorie li{
+    list-style-image: url(../img/puce-pomme.png);
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 40px;
+    color: #712727;
+}
+input{
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 40px;
+    color: #712727;
+}
+
+#favoris{
+    margin-bottom: 60px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+    
+}
+#favoris h2{
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #712727;
+}
+
