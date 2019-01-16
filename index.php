@@ -22,7 +22,7 @@
 							<li><a href="">Mes Menus</a></li>
 							<li><a href="php/categories.php">Produits</a></li>
 							<li><a href="">Blog</a></li>
-							<li><a href="">Contact</a></li>
+							<li><a href="php/contact-phpmailer.php">Contact</a></li>
 						</ul>		
 					</li>
 				</ul>
