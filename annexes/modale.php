@@ -5,13 +5,15 @@
 			<input type="text" name="" id="nomUtilisateur">
 
 			<label for="nomUtilisateur">Mot de passe : </label> <br />
-			<input type="text" name="" id="nomUtilisateur"> <br />
+			<input type="password" name="" id="nomUtilisateur"> <br />
 
-			<input type="submit" name="subm" value="Connexion">
+			<div>
+				<input type="submit" name="subm" value="Connexion">
+			</div>
 		</form>
 		
 		<div>
-			<p>Nouveau client ? <a href="">Créer un compte</a></p> 
+			<a href="">Créer un compte ?</a>
 		</div>
 	</div>
 </div>
