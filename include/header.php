@@ -9,7 +9,7 @@
 				<li><a href="../index.php">Accueil</a></li>
 				<li><a href="">Mon Profil</a></li>
 				<li><a href="">Mes Menus</a></li>
-				<li><a href="php/categories.php">Produits</a></li>
+				<li><a href="../php/categories.php">Produits</a></li>
 				<li><a href="">Informations nutritionnelles</a></li>
 			</ul>		
 		</li>

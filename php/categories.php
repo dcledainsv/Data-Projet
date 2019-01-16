@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/categories.css">
@@ -15,13 +16,16 @@
 
 <section>
     <h1>Catégories</h1>
-    <form action="listeproduits.php" method="get">
-        <div class="categorie" id="fruits">
+    <form name="cat" action="listeproduits.php" method="get">
+        <div id="favoris">
+            <h2>Mes produits favoris</h2>
+        </div>
+        <div class="categorie" id="fruitleg">
         <h2>Fruits et légumes</h2>
             <div class="liste">       
                 <ul>
-                    <li><input type="button" name="fruits" value="Fruits"></li>
-                    <li>Compotes</li>
+                    <li id="fruits">Fruits</li>
+                    <li id="compotes">Compotes</li>
                     <li>Fruits secs et graines</li>
                     <li>Légumes</li>
                     <li>Légumineuses</li>
@@ -98,9 +102,7 @@
                 </ul>
             </div>
         </div>
-        <div id="favoris">
-            <h2>Mes produits favoris</h2>
-        </div>
+        
     </form>
 </section>
 
