@@ -9,18 +9,18 @@
 
 	<body>
 		<header>
-			<img src="./img/logo-bio-miam-horizon.png" alt="Titre du site et logo" class="logo-header">
+			<img src="img/logo-bio-miam-horizon.png" alt="Titre du site et logo" class="logo-header">
 
 			<nav>
 				<ul>
 					<li>
-						<img src="./img/menu-hamburger.png" class="menu-hamb-logo">
+						<img src="img/menu-hamburger.png" class="menu-hamb-logo">
 						
 						<ul class="submenu">
-							<li><a href="./index.php">Accueil</a></li>
+							<li><a href="index.php">Accueil</a></li>
 							<li><a href="">Mon Profil</a></li>
 							<li><a href="">Mes Menus</a></li>
-							<li><a href="./php/categories.php">Produits</a></li>
+							<li><a href="php/categories.php">Produits</a></li>
 							<li><a href="">Blog</a></li>
 							<li><a href="">Contact</a></li>
 						</ul>		
@@ -35,7 +35,7 @@
 		
 		<section>
 			<div>
-				<img src="./img/ferme.png" alt="Bannière d'image du site" class="image-banner">
+				<img src="img/ferme.png" alt="Bannière d'image du site" class="image-banner">
 			</div>
 
 
@@ -45,15 +45,15 @@
 
 			<div id="logo-bas">
 				<div>
-					<img src="./img/nutri-a.png">
+					<img src="img/nutri-a.png">
 				</div>
 
 				<div>
-					<img src="./img/logo-bio.png">
+					<img src="img/logo-bio.png">
 				</div>
 				
 				<div>
-					<img src="./img/nutri-b.png">
+					<img src="img/nutri-b.png">
 				</div>
 			</div>
 		</section>
@@ -82,11 +82,11 @@
 				</form>
 				
 				<div>
-					<a href="./php/formulaireInscription.php">Créer un compte ?</a>
+					<a href="php/formulaireInscription.php">Créer un compte ?</a>
 				</div>
 			</div>
 		</div>
 		<!-- End Modale -->
-		<script type="text/javascript" src="./js/script.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>

@@ -8,7 +8,7 @@
     <title>Inscription</title>
 </head>
 <body>
-<?php include("./annexes/header.php"); ?>
+<?php include("annexes/header.php"); ?>
 
     <section>
         <h1>Informations personnelles</h1>
@@ -199,6 +199,6 @@ function test_input($data) {
     echo $activite;
 ?>
 
-<?php include("./annexes/footer.php") ?>
+<?php include("annexes/footer.php") ?>
 </body>
 </html>

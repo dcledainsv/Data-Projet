@@ -8,7 +8,7 @@
 	</head>
 
 	<body>
-		<?php include("./annexes/header.php"); ?>
+		<?php include("annexes/header.php"); ?>
 
 		<section>
                 <form method="post" action="<?php echo strip_tags($_SERVER['REQUEST_URI']); ?>">
@@ -66,6 +66,6 @@
                 ?>
 		</section>
 
-		<?php include("./annexes/footer.php") ?>
+		<?php include("annexes/footer.php") ?>
 	</body>
 </html>

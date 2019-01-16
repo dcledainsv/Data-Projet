@@ -13,7 +13,7 @@
 		</form>
 		
 		<div>
-			<a href="./php/formulaireInscription.php">Créer un compte ?</a>
+			<a href="php/formulaireInscription.php">Créer un compte ?</a>
 		</div>
 	</div>
 </div>
