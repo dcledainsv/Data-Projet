@@ -16,13 +16,25 @@
 			include("../include/header.php");
 			/* Liaison BDD */
 			include('../request/log-bdd.php');
+			/* Select table */
+			include('../request/categorie_produit.php');
 			?>
 		</header>
 		
 		<section>
 
 			<div>
-			
+				<?php
+
+				while ($donnees = $reponse->fetch())
+				{
+				echo $donnees['nom_catégorie'] . '<br />';
+				}
+
+				$reponse->closeCursor();
+				?>
+
+			</div>
 
 			
 		</section>
