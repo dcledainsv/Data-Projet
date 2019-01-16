@@ -2,8 +2,8 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style-inscription.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style-inscription.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 
     <title>Inscription</title>
 </head>

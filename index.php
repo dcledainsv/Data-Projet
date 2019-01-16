@@ -20,7 +20,7 @@
 							<li><a href="./index.php">Accueil</a></li>
 							<li><a href="">Mon Profil</a></li>
 							<li><a href="">Mes Menus</a></li>
-							<li><a href="./annexes/categories.php">Produits</a></li>
+							<li><a href="./php/categories.php">Produits</a></li>
 							<li><a href="">Blog</a></li>
 							<li><a href="">Contact</a></li>
 						</ul>		
@@ -66,7 +66,27 @@
 			</p>
 		</footer>
 
-		<?php include("./annexes/modale.php");?>
+		<!-- If clic inscription => Modale -->
+		<div id="modaleLog">
+			<div id="log">
+				<form>
+					<label for="nomUtilisateur">Nom d'utilisateur : </label> <br />
+					<input type="text" name="" id="nomUtilisateur">
+
+					<label for="nomUtilisateur">Mot de passe : </label> <br />
+					<input type="password" name="" id="nomUtilisateur"> <br />
+
+					<div>
+						<input type="submit" name="subm" value="Connexion">
+					</div>
+				</form>
+				
+				<div>
+					<a href="./php/formulaireInscription.php">Créer un compte ?</a>
+				</div>
+			</div>
+		</div>
+		<!-- End Modale -->
 		<script type="text/javascript" src="./js/script.js"></script>
 	</body>
 </html>
