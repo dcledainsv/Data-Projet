@@ -25,14 +25,15 @@
 
             <?php
 
-            $requete = "SELECT urlPhotoPetite_produit, nom_produit, descript_produit FROM PRODUITS JOIN APPARTIENT JOIN CATEGORIES_PRODUITS ON (PRODUITS.id_produit = APPARTIENT.id_produit AND APPARTIENT.id_catégorie = CATEGORIES_PRODUITS.id_catégorie) WHERE nom_catégorie lIKE '".$cat."'";
+            $requete = "SELECT urlPhotoPetite_produit, nom_produit, descript_produit FROM PRODUITS JOIN APPARTIENT JOIN CATEGORIES_PRODUITS ON (PRODUITS.id_produit = APPARTIENT.id_produit AND APPARTIENT.id_catégorie = CATEGORIES_PRODUITS.id_catégorie) WHERE CATEGORIES_PRODUITS.id_catégorie =".$cat;  
+            
 
             $bdd = connectbdd();
 
             $req = $bdd->query($requete);
 			$x=1;
 			while($data = $req->fetch()){
-                echo "<div class='produit' id='".$x."'> <img class='image' src='".$data['urlPhotoPetite_produit']. "'/> <div class='text'><p> ".$data['nom_produit']."</p><p>".$data['descript_produit']."</p> </div></div>";
+                echo "<div class='produit' id='".$x."'> <img class='image' src='".$data['urlPhotoPetite_produit']. "'/> <div class='text'><p> ".$data['nom_produit']."</p><p class='descrip' >".$data['descript_produit']."</p> </div></div>";
                 $x++;
             }
 

@@ -11,21 +11,24 @@
 .image{
     width: 200px;
     height: 200px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 .text{
     display:flex;
     flex-direction: column;
-    
     background-color: #712727;
     padding-left:10px;
     padding-top: 10px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
     flex: 1;
     margin-right: 20px;
     color: #9dbf15;
     font-size: 2.5em;
-
+    font-weight: bold;
 }
+.text .descrip{
+font-size: 0.4em;
+}
+   
