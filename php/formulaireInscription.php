@@ -2,67 +2,72 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/style_inscription.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/inscription.css">
 
 		<title>Formulaire d'inscription</title>
 	</head>
-
 	<body>
+
 		<header>
-			<?php include("./annexes/header.php"); ?>
+			<?php include("../include/header.php"); ?>
 		</header>
 		
 		<section>
-        <h1>Informations personnelles</h1>
-            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-                <input type="text" name="pseudo" value="<?php echo $pseudo;?>" placeholder="Pseudo">
-                <span class="error"><?php echo $pseudoErr;?></span>
-                <br><br>
-                <input type="text" name="motDePasse" value="<?php echo $motDePasse;?>"placeholder="Mot de passe">
-                <span class="error"><?php echo $motDePasseErr;?></span>
-                <br><br>
-                <input type="text" name="confMotDePasse" value="<?php echo $confMotDePasse;?>"placeholder="Confirmez votre mot de passe">
-                <span class="error"><?php echo $confMotDePasseErr;?></span>
-                <br><br>
-                <input type="mail" name="email" value="<?php echo $email;?>"placeholder="Email">
-                <span class="error"><?php echo $emailErr;?></span>
-                <br><br>
-                <input type="text" name="nom" value="<?php echo $nom;?>"placeholder="Nom">
-                <span class="error"><?php echo $nomErr;?></span>
-                <br><br>
-                <input type="text" name="prenom" value="<?php echo $prenom;?>"placeholder="Prénom">
-                <span class="error"><?php echo $prenomErr;?></span>
-                <br><br>
-                <p>Pour le calcule de votre ........<p>
-                <br>
-                Date de naissance 
-                <br>
-                <input type="date" name="dateDeNaissance" value="<?php echo $dateDeNaissance;?>"placeholder="Date de naissance">
-                <span class="error"><?php echo $dateDeNaissanceErr;?></span>
-                <br><br>
-                Femme<input type="radio" name="sexe" <?php if (isset($sexe) && $sexe=="femme") echo "checked";?> value="femme">
-                <span class="error"><?php echo $sexeErr;?></span>
-                Homme<input type="radio" name="sexe" <?php if (isset($sexe) && $sexe=="homme") echo "checked";?> value="homme">
-                <span class="error"><?php echo $sexeErr;?></span>
-                <br><br>
-                <input type="number" name="taille" value="<?php echo $taille;?>"placeholder="Taille (cm)">
-                <span class="error"><?php echo $tailleErr;?></span>
-                <br><br>
-                <input type="number" name="poids" value="<?php echo $poids;?>"placeholder="Poids (Kg)">
-                <span class="error"><?php echo $poidsErr;?></span>
-                <br><br>
-                <select name="activite">
-                    <option value="">Activité</option>
-                    <option value="sedentaire">Sédentaire</option>
-                    <option value="legerementActif">Légèrement actif</option>
-                    <option value="actif">Actif</option>
-                    <option value="sportif">Sportif</option>
-                </select>                
-                <br><br>
-                <input type="submit" name="jeMinscris" value="Je m'inscris"> 
-                <br><br> 
-            </form>
+        <h2>Informations personnelles</h2>
+            <div class="haut">
+                <form method="post" action="#">  
+                    <input type="text" class="input" name="pseudo" value="<?php echo $pseudo;?>" placeholder="Pseudo">
+                    <span class="error"><?php echo $pseudoErr;?></span>
+                    <br><br>
+                    <input type="text" class="input" name="motDePasse" value="<?php echo $motDePasse;?>"placeholder="Mot de passe">
+                    <span class="error"><?php echo $motDePasseErr;?></span>
+                    <br><br>
+                    <input type="text" class="input" name="confMotDePasse" value="<?php echo $confMotDePasse;?>"placeholder="Confirmez votre mot de passe">
+                    <span class="error"><?php echo $confMotDePasseErr;?></span>
+                    <br><br>
+                    <input type="mail" class="input" name="email" value="<?php echo $email;?>"placeholder="Email">
+                    <span class="error"><?php echo $emailErr;?></span>
+                    <br><br>
+                    <input type="text" class="input" name="nom" value="<?php echo $nom;?>"placeholder="Nom">
+                    <span class="error"><?php echo $nomErr;?></span>
+                    <br><br>
+                    <input type="text" class="input" name="prenom" value="<?php echo $prenom;?>"placeholder="Prénom">
+                    <span class="error"><?php echo $prenomErr;?></span>
+                    <br><br>
+            </div>
+            <div class="texte">
+              Pour le calcule de votre ........ il nous faut ces informations complétmentaires
+            </div>
+            <div class="bas">
+                    <label for="dateDeNaissance">Date de naissance</label>
+                    <input type="date" class="input" id="dateDeNaissance" name="dateDeNaissance" value="<?php echo $dateDeNaissance;?>"placeholder="Date de naissance">
+                    <span class="error"><?php echo $dateDeNaissanceErr;?></span>
+                    <br><br>
+                    <label for="femme">Femme</label>
+                    <input type="radio" id="femme" class="radio" name="sexe" <?php if (isset($sexe) && $sexe=="femme") echo "checked";?> value="femme">
+                    <span class="error"><?php echo $sexeErr;?></span>
+                    <label for="homme">Homme</label>
+                    <input type="radio" id="homme" class="radio" name="sexe" <?php if (isset($sexe) && $sexe=="homme") echo "checked";?> value="homme">
+                    <span class="error"><?php echo $sexeErr;?></span>
+                    <br><br>
+                    <input type="number"  class="input" name="taille" value="<?php echo $taille;?>"placeholder="Taille (cm)">
+                    <span class="error"><?php echo $tailleErr;?></span>
+                    <br><br>
+                    <input type="number"  class="input" name="poids" value="<?php echo $poids;?>"placeholder="Poids (Kg)">
+                    <span class="error"><?php echo $poidsErr;?></span>
+                    <br><br>
+                    <select class="input"name="activite" >
+                        <option value="Activité"  >Sélectionnez une activité</option>
+                        <option value="Sédentaire" >Sédentaire</option>
+                        <option value="Légèrement actif" >Légèrement actif</option>
+                        <option value="Actif" >Actif</option>
+                        <option value="Sportif" >Sportif</option>
+                    </select>                
+                    <br><br>
+            </div>       
+                    <input type="submit" class="input" name="jeMinscris" value="Je m'inscris"> 
+                </form>
     </section>
 
     <?php
@@ -70,7 +75,7 @@
 $pseudoErr = $motDePasseErr = $confMotDePasseErr = $emailErr = $nomErr = $prenomErr = $dateDeNaissanceErr = $sexeErr = $tailleErr = $poidsErr = $activite = "";
 $pseudo = $motDePasse = $confMotDePasse = $email = $nom = $prenom = $dateDeNaissance = $sexe = $taille = $poids = $activite = "";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (isset($_POST["jeMinscris"])) {
   if (empty($_POST["pseudo"])) {
     $pseudoErr = "Le pseudo est requis";
   } else {
@@ -161,10 +166,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
   }
 
-  if (empty($_POST["activite"])) {
-    $activiteErr = "Votre activité est requise !";
-  } else {
-    $sactivite = test_input($_POST["activite"]);
+  if (isset($_POST["activite"])){
+    $choix = $_POST["activite"];
+    if ($choix=="sedentaire"){
+      echo ("Sédentaire");
+    }
+    if ($choix=="legerementActif"){
+      echo ("Légèrement actif");
+    }
+    if ($choix=="actif"){
+      echo ("Actif");
+    }
+    if ($choix=="sportif"){
+      echo ("Sportif");
+    }
   }
   }
 }
@@ -198,18 +213,12 @@ function test_input($data) {
     echo "<br>";
     echo $poids;
     echo "<br>";
-    echo $activite;
+    echo $choix;
 ?>
 
-<<<<<<< HEAD:formulaireInscription.php
-</section>
-
 <footer>
-  <?php include("./annexes/footer.php") ?>
+  <?php include("../include/footer.php")?>
 </footer>
 
-=======
-<?php include("../include/footer.php") ?>
->>>>>>> dev:php/formulaireInscription.php
 </body>
 </html>

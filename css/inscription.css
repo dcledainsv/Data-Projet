@@ -1,52 +1,69 @@
 section, ::placeholder {
-    color : #712727;
-    font-size: 1em;
+    color : white;
     text-align: center;
-
 }
 
-.input, option {
-    justify-content: center;
-    width: 80%;
-    height: 2rempx;
-    padding: 1rem 2rem;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    font-size: 1rem;
-    resize: 1rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+h2 {
+    color:#712727;
+    font-size: 5em;
+}
+
+label {
+    font-size: 3.5em;
+}
+.input {
+    background: #9DBF15;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid #712727;
+    box-shadow: 3px 3px 3px #712727;
+    font-size: 3.5em;
+    color :white;
 }
 
 section {
-    margin-top : 2rem;
+    margin-top : 3em;
 }
 
-form {
-    margin-top : 1.5rem;
-}
-
-.haut, .bas {
-    width: 90%;
-    margin-top: 10px;
-    margin-left: 5%;
-    border-radius: 20px;
+.texte {
+    padding: 1rem;
+    font-size: 2em;
+    color:#712727;
+    width: 80%;
+    margin-top: 3rem;
+    margin-left: 8%;
+    margin-bottom: 1rem;
+    border-radius: 10px;
     background-size: 100% 100%;
     border: 1px solid #712727;
     box-shadow: 3px 2px 2px #712727;
     background-color: white;
 }
-.haut {
-    margin-top: 2em ;
+
+.haut, .bas {
+    width: 90%;
+    margin-top: 3rem;
+    margin-left: 4.5%;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    background-size: 100% 100%;
+    border: 1px solid #712727;
+    box-shadow: 3px 2px 2px #712727;
+    background-color: #712727;
+}
+.haut, .bas {
+    padding-top: 1.5em ;
 }
 .radio {
-    height: 5em;
-    width: 5em ;
+    height: 2.5em;
+    width: 2.5em ;
 }
 
-
+option {
+    font-size: 0.8em;
+    text-align:center;
+}
 
 select {
-text-align: center;
+    text-align: center;
 }

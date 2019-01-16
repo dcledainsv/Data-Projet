@@ -70,11 +70,6 @@ nav
 	justify-content: center;
 }
 
-nav a
-{
-	
-}
-
 nav > ul:after
 {
 	content: "";
