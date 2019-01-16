@@ -7,7 +7,9 @@
     <title>Inscription</title>
 </head>
 <body>
-<?php include("../include/header.php"); ?>
+  <header>
+    <?php include("../include/header.php"); ?>
+  </header>
 
     <section>
         <h1>Informations personnelles</h1>
