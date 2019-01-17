@@ -36,13 +36,13 @@
                         // (1) Code PHP pour traiter l'envoi de l'email
 
                         // Récupération des variables et sécurisation des données
-                        $nom     = htmlentities($_POST['nom']); // htmlentities() convertit des caractères "spéciaux" en équivalent HTML
-                        $prenom   = htmlentities($_POST['prenom']);
-                        $email   = htmlentities($_POST['email']);
+                        $nom     = $_POST['nom']; 
+                        $prenom   = $_POST['prenom'];
+                        $email   = htmlentities($_POST['email']);// htmlentities() convertit des caractères "spéciaux" en équivalent HTML
                         $telephone   = htmlentities($_POST['telephone']);
                         $postal   = htmlentities($_POST['postal']);
-                        $ville   = htmlentities($_POST['ville']);
-                        $objet   = htmlentities($_POST['objet']);
+                        $ville   = $_POST['ville'];
+                        $objet   = $_POST['objet'];
                         $message = htmlentities($_POST['message']);
 
                         // Variables concernant l'email
@@ -59,7 +59,7 @@
                             // Expéditeur
                         $mail->SetFrom($email, $prenom.' '. $nom);
                         // Destinataire
-                        $mail->AddAddress('laurent.juy@gmail.com', 'JUY Laurent');
+                        $mail->AddAddress('dcl.laurentj@18pixel.fr', 'JUY Laurent');
                         // Objet
                         $mail->Subject = $objet;
 
