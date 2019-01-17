@@ -22,10 +22,14 @@
 							<li><a href="">Mes Menus</a></li>
 							<li><a href="php/categories.php">Produits</a></li>
 							<li><a href="">Blog</a></li>
-							<li><a href="">Contact</a></li>
+							<li><a href="php/contact-phpmailer.php">Contact</a></li>
 						</ul>		
 					</li>
 				</ul>
+
+				<div id="login">
+					<p>Connexion / <br/>Inscription</p>
+				</div>
 			</nav>
 		</header>
 		
@@ -56,10 +60,33 @@
 
 		<footer>
 			<p>
-				Copyright&copy; - 
+				Copyright &copy; - 
 				<a href="">Mentions Légales</a> -
 				<a href="">A propos</a>
 			</p>
 		</footer>
+
+		<!-- If clic inscription => Modale -->
+		<div id="modaleLog">
+			<div id="log">
+				<form>
+					<label for="nomUtilisateur">Nom d'utilisateur : </label> <br />
+					<input type="text" name="" id="nomUtilisateur">
+
+					<label for="nomUtilisateur">Mot de passe : </label> <br />
+					<input type="password" name="" id="nomUtilisateur"> <br />
+
+					<div>
+						<input type="submit" name="subm" value="Connexion">
+					</div>
+				</form>
+				
+				<div>
+					<a href="php/formulaireInscription.php">Créer un compte ?</a>
+				</div>
+			</div>
+		</div>
+		<!-- End Modale -->
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>

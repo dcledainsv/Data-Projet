@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+<<<<<<< HEAD
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -8,6 +9,18 @@
 		<title>Formulaire d'inscription</title>
 	</head>
 	<body>
+=======
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style-inscription.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Inscription</title>
+</head>
+<body>
+  <header>
+    <?php include("../include/header.php"); ?>
+  </header>
+>>>>>>> dev
 
 		<header>
 			<?php include("../include/header.php"); ?>

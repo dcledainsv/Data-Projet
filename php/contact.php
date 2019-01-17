@@ -8,7 +8,9 @@
 	</head>
 
 	<body>
-		<?php include("../include/header.php"); ?>
+		<header>
+            <?php include("../include/header.php"); ?>      
+        </header>
 
 		<section>
                 <form method="post" action="<?php echo strip_tags($_SERVER['REQUEST_URI']); ?>">
