@@ -84,5 +84,7 @@
 		<footer>
 			<?php include("../include/footer.php") ?>
 		</footer>
+
+		<script type="text/javascript" src="../js/menu-day.js"></script>
 	</body>
 </html>
