@@ -9,7 +9,7 @@
 
 	<body>
 		<header>
-			<img src="img/logo-bio-miam-horizon.png" alt="Titre du site et logo" class="logo-header">
+			<a href="index.php"><img src="img/logo-bio-miam-horizon.png" alt="Titre du site et logo" class="logo-header"></a>
 
 			<nav>
 				<ul>
@@ -19,7 +19,7 @@
 						<ul class="submenu">
 							<li><a href="index.php">Accueil</a></li>
 							<li><a href="">Mon Profil</a></li>
-							<li><a href="">Mes Menus</a></li>
+							<li><a href="php/menu-day.php">Mes Menus</a></li>
 							<li><a href="php/categories.php">Produits</a></li>
 							<li><a href="">Blog</a></li>
 							<li><a href="php/contact-phpmailer.php">Contact</a></li>
@@ -61,7 +61,7 @@
 		<footer>
 			<p>
 				Copyright &copy; - 
-				<a href="">Mentions Légales</a> -
+				<a href="php/mentionslegales.php">Mentions Légales</a> -
 				<a href="">A propos</a>
 			</p>
 		</footer>
