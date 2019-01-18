@@ -1,36 +1,18 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html>
-	<head>
-		<meta charset="UTF-8">
-	    <link rel="stylesheet" href="../css/style.css">
-	    <link rel="stylesheet" href="../css/menu-day.css">
-	    <title>Menu du jour</title>
-=======
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/accueil.css">
         <link rel="stylesheet" href="../css/menu-day.css">
 		<title>Accueil</title>
 		<?php 
     	 
     	?>
->>>>>>> d8a09abc49654bfc3b8683fc519a66090edc9cdb
 	</head>
 
 	<body>
 		<header>
-<<<<<<< HEAD
-			<?php include("../include/header.php"); ?>
-		</header>
-
-		<section>
-			<h1>Composition du menu de la journée</h1>
-		</section>
-
-
-=======
 			<?php 
 			include("../include/header.php");
 			/* Liaison BDD */
@@ -45,23 +27,23 @@
 
             <div class="menu" id="tab_1">
                 <div class="aliment"><img class="image" src="https://static.openfoodfacts.org/images/products/376/004/979/4298/front_fr.77.200.jpg" alt="pain"> </div>
-                    
-                    <div class="taux">
-                        <div class="pourcentage">0%</div>
-                        <div id="glucides">Glucides</div>
-                    </div>
-                    <div class="taux">
-                        <div class="pourcentage">0%</div>
-                        <div id="lipides">Lipides</div>
-                    </div>
-                    <div class="taux">
-                        <div class="pourcentage">0%</div>
-                        <div id="proteines">Protéines</div>
-                    </div>
-                    <div class="taux">
-                        <div class="pourcentage">0</div>
-                        <div id="calories">Calories</div>
-                    </div>
+                
+                <div class="taux">
+                    <div class="pourcentage">0%</div>
+                    <div id="glucides">Glucides</div>
+                </div>
+                <div class="taux">
+                    <div class="pourcentage">0%</div>
+                    <div id="lipides">Lipides</div>
+                </div>
+                <div class="taux">
+                    <div class="pourcentage">0%</div>
+                    <div id="proteines">Protéines</div>
+                </div>
+                <div class="taux">
+                    <div class="pourcentage">0</div>
+                    <div id="calories">Calories</div>
+                </div>
             </div>
 
             <div class="menu" id="tab_2">
@@ -84,7 +66,6 @@
                     <div id="calories">Calories</div>
                 </div>
             </div>
-            
             <div id="produits">
 				<form method="post" action="#">
 					<div id="listProduit"> <!-- Bloc contenant les produits créés par la fonction "menu-day.js" -->
@@ -103,6 +84,5 @@
 		<footer>
 			<?php include("../include/footer.php") ?>
 		</footer>
->>>>>>> d8a09abc49654bfc3b8683fc519a66090edc9cdb
 	</body>
 </html>
