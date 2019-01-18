@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/categories.css">
     <title>catégories</title>
@@ -109,6 +108,6 @@
 <footer>
     <?php include("../include/footer.php") ?>
 </footer>
-   <script src="../js/produits.js"></script> 
+   <script src="../js/catprod.js"></script> 
 </body>
 </html>
