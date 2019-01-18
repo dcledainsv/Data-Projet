@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 section
 {
 	margin-left: 5%;
@@ -74,6 +75,84 @@ footer
     border-bottom-right-radius: 30px;
     font-size: 2em;
     
+=======
+.menu
+{
+	margin: auto;
+	width: 95%;
+	display: flex;
+	margin-bottom: 10px;
+	justify-content: space-between;
+}
+
+.image
+{
+	width: 160px;
+	height: 160px;
+	border-radius: 30px;
+}
+
+.taux
+{
+	background-color:
+	#712727;
+	width: 160px;
+	height: 160px;
+	border-radius: 30px;
+	text-align: center;
+	vertical-align: center;
+	display: flex;
+	flex-direction: column ;
+	justify-content: space-between;
+}
+
+.pourcentage 
+{
+	color: #9DBF15;
+	font-size: 4em;
+	display: flex;
+	margin: auto;
+}
+
+#glucides 
+{
+	background-color: #F82D09;
+	color: #FFFFFF;
+	font-weight: bold;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	font-size: 2em;
+}
+
+#lipides
+{
+	background-color: #FFC831;
+	color: #712727;
+	font-weight: bold;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	font-size: 2em;
+}
+
+#proteines 
+{
+	background-color: #9DBF15;
+	color:#712727;
+	font-weight: bold;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	font-size: 2em;
+}
+
+#calories
+{
+	background-color:#9DBF15;
+	color: #712727;
+	font-weight: bold;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	font-size: 2em;
+>>>>>>> edains
 }
 
 #produits
@@ -103,8 +182,14 @@ form > input
 	justify-content: center;
 	align-items: center;
 	font-size: 5em;
+<<<<<<< HEAD
 	cursor: pointer;
 }
 
 
    
+=======
+	margin-bottom: 3%;
+	cursor: pointer;
+}
+>>>>>>> edains

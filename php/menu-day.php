@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html>
 	<head>
 		<meta charset="UTF-8">
@@ -7,6 +8,8 @@
 	    <link rel="stylesheet" href="../css/menu-day.css">
 	    <title>Menu du jour</title>
 =======
+=======
+>>>>>>> cca590b2b66ae840813613c0eaeeecb7137598fb
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
@@ -16,11 +19,15 @@
 		<?php 
     	 
     	?>
+<<<<<<< HEAD
 >>>>>>> d8a09abc49654bfc3b8683fc519a66090edc9cdb
+=======
+>>>>>>> cca590b2b66ae840813613c0eaeeecb7137598fb
 	</head>
 
 	<body>
 		<header>
+<<<<<<< HEAD
 <<<<<<< HEAD
 			<?php include("../include/header.php"); ?>
 		</header>
@@ -31,6 +38,8 @@
 
 
 =======
+=======
+>>>>>>> cca590b2b66ae840813613c0eaeeecb7137598fb
 			<?php 
 			include("../include/header.php");
 			/* Liaison BDD */
@@ -103,6 +112,11 @@
 		<footer>
 			<?php include("../include/footer.php") ?>
 		</footer>
+<<<<<<< HEAD
 >>>>>>> d8a09abc49654bfc3b8683fc519a66090edc9cdb
+=======
+
+		<script type="text/javascript" src="../js/menu-day.js"></script>
+>>>>>>> cca590b2b66ae840813613c0eaeeecb7137598fb
 	</body>
 </html>
