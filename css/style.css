@@ -71,10 +71,7 @@ nav
 	height: 100%;
 	display: flex;
 	justify-content: center;
-<<<<<<< HEAD
-=======
 	flex-direction: column;
->>>>>>> dev
 }
 
 nav > ul:after

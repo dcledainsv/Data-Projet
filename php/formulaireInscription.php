@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-<<<<<<< HEAD
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -9,81 +8,47 @@
 		<title>Formulaire d'inscription</title>
 	</head>
 	<body>
-=======
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/style-inscription.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Inscription</title>
-</head>
-<body>
-  <header>
-    <?php include("../include/header.php"); ?>
-  </header>
->>>>>>> dev
 
 		<header>
 			<?php include("../include/header.php"); ?>
 		</header>
 		
 		<section>
-        <h2>Informations personnelles</h2>
-            <div class="haut">
-                <form method="post" action="#">  
-                    <input type="text" class="input" name="pseudo" value="<?php echo $pseudo;?>" placeholder="Pseudo">
-                    <span class="error"><?php echo $pseudoErr;?></span>
-                    <br><br>
-                    <input type="text" class="input" name="motDePasse" value="<?php echo $motDePasse;?>"placeholder="Mot de passe">
-                    <span class="error"><?php echo $motDePasseErr;?></span>
-                    <br><br>
-                    <input type="text" class="input" name="confMotDePasse" value="<?php echo $confMotDePasse;?>"placeholder="Confirmez votre mot de passe">
-                    <span class="error"><?php echo $confMotDePasseErr;?></span>
-                    <br><br>
-                    <input type="mail" class="input" name="email" value="<?php echo $email;?>"placeholder="Email">
-                    <span class="error"><?php echo $emailErr;?></span>
-                    <br><br>
-                    <input type="text" class="input" name="nom" value="<?php echo $nom;?>"placeholder="Nom">
-                    <span class="error"><?php echo $nomErr;?></span>
-                    <br><br>
-                    <input type="text" class="input" name="prenom" value="<?php echo $prenom;?>"placeholder="Prénom">
-                    <span class="error"><?php echo $prenomErr;?></span>
-                    <br><br>
-            </div>
-            <div class="texte">
-              Pour le calcule de votre ........ il nous faut ces informations complétmentaires
-            </div>
-            <div class="bas">
-                    <label for="dateDeNaissance">Date de naissance</label>
-                    <input type="date" class="input" id="dateDeNaissance" name="dateDeNaissance" value="<?php echo $dateDeNaissance;?>"placeholder="Date de naissance">
-                    <span class="error"><?php echo $dateDeNaissanceErr;?></span>
-                    <br><br>
-                    <label for="femme">Femme</label>
-                    <input type="radio" id="femme" class="radio" name="sexe" <?php if (isset($sexe) && $sexe=="femme") echo "checked";?> value="femme">
-                    <span class="error"><?php echo $sexeErr;?></span>
-                    <label for="homme">Homme</label>
-                    <input type="radio" id="homme" class="radio" name="sexe" <?php if (isset($sexe) && $sexe=="homme") echo "checked";?> value="homme">
-                    <span class="error"><?php echo $sexeErr;?></span>
-                    <br><br>
-                    <input type="number"  class="input" name="taille" value="<?php echo $taille;?>"placeholder="Taille (cm)">
-                    <span class="error"><?php echo $tailleErr;?></span>
-                    <br><br>
-                    <input type="number"  class="input" name="poids" value="<?php echo $poids;?>"placeholder="Poids (Kg)">
-                    <span class="error"><?php echo $poidsErr;?></span>
-                    <br><br>
-                    <select class="input"name="activite" >
-                        <option value="Activité"  >Sélectionnez une activité</option>
-                        <option value="Sédentaire" >Sédentaire</option>
-                        <option value="Légèrement actif" >Légèrement actif</option>
-                        <option value="Actif" >Actif</option>
-                        <option value="Sportif" >Sportif</option>
-                    </select>                
-                    <br><br>
-            </div>       
-                    <input type="submit" class="input" name="jeMinscris" value="Je m'inscris"> 
-                </form>
-    </section>
-
-    <?php
+            <h2>Informations personnelles</h2>
+                <div class="haut">
+                    <form method="post" action="#">  
+                        <input type="text" class="input" name="pseudo" value="<?php echo $pseudo;?>" placeholder="Pseudo">
+                        <input type="text" class="input" name="motDePasse" value="<?php echo $motDePasse;?>"placeholder="Mot de passe">
+                        <input type="text" class="input" name="confMotDePasse" value="<?php echo $confMotDePasse;?>"placeholder="Confirmez votre mot de passe">
+                        <input type="mail" class="input" name="email" value="<?php echo $email;?>"placeholder="Email">
+                        <input type="text" class="input" name="nom" value="<?php echo $nom;?>"placeholder="Nom">
+                        <input type="text" class="input" name="prenom" value="<?php echo $prenom;?>"placeholder="Prénom">
+                </div>
+                <div class="texte">
+                Pour le calcule de votre ........ il nous faut ces informations complétmentaires
+                </div>
+                <div class="bas">
+                        <label for="dateDeNaissance">Date de naissance</label>
+                        <input type="date" class="input" id="dateDeNaissance" name="dateDeNaissance" value="<?php echo $dateDeNaissance;?>"placeholder="Date de naissance">
+                        <label for="femme">Femme</label>
+                        <input type="radio" id="femme" class="radio" name="sexe" <?php if (isset($sexe) && $sexe=="femme") echo "checked";?> value="femme">
+                        <label for="homme">Homme</label>
+                        <input type="radio" id="homme" class="radio" name="sexe" <?php if (isset($sexe) && $sexe=="homme") echo "checked";?> value="homme">
+                        <input type="number"  class="input" name="taille" value="<?php echo $taille;?>"placeholder="Taille (cm)">
+                        <input type="number"  class="input" name="poids" value="<?php echo $poids;?>"placeholder="Poids (Kg)">
+                        <select class="input"name="activite" >
+                            <option value="Activité"  >Sélectionnez une activité</option>
+                            <option value="Sédentaire" >Sédentaire</option>
+                            <option value="Légèrement actif" >Légèrement actif</option>
+                            <option value="Actif" >Actif</option>
+                            <option value="Sportif" >Sportif</option>
+                        </select>                
+                </div>       
+                        <input type="submit" class="input" name="jeMinscris" value="Je m'inscris"> 
+                    </form>
+        </section>
+        
+        <?php
 // définir les variables avec des valeurs vides
 $pseudoErr = $motDePasseErr = $confMotDePasseErr = $emailErr = $nomErr = $prenomErr = $dateDeNaissanceErr = $sexeErr = $tailleErr = $poidsErr = $activite = "";
 $pseudo = $motDePasse = $confMotDePasse = $email = $nom = $prenom = $dateDeNaissance = $sexe = $taille = $poids = $activite = "";
