@@ -1,0 +1,74 @@
+section, ::placeholder {
+    color : white;
+    text-align: center;
+}
+
+h2 {
+    color:#712727;
+    font-size: 4em;
+}
+
+label {
+    font-size: 3.5em;
+}
+.input {
+    text-align: center;
+    background: #9DBF15;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid #712727;
+    box-shadow: 3px 3px 3px #712727;
+    font-size: 3.5em;
+    color :white;
+}
+
+section {
+    margin-top : 3em;
+}
+
+.texte {
+    padding: 1rem;
+    font-size: 2em;
+    color:#712727;
+    width: 80%;
+    margin-top: 3rem;
+    margin-left: 8%;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    background-size: 100% 100%;
+    border: 1px solid #712727;
+    box-shadow: 3px 2px 2px #712727;
+    background-color: white;
+}
+
+.haut, .bas {
+    width: 90%;
+    margin-top: 3rem;
+    margin-left: 4.5%;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    background-size: 100% 100%;
+    border: 1px solid #712727;
+    box-shadow: 3px 2px 2px #712727;
+    background-color: #712727;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+
+}
+.haut, .bas {
+    padding-top: 1.5em ;
+}
+.radio {
+    height: 2.5em;
+    width: 2.5em ;
+}
+
+option {
+    font-size: 0.4em;
+    text-align:center;
+}
+
+select {
+    text-align: center;
+    -webkit-appearance: none; /* Retirer la flèche de la liste déroulante */
+}

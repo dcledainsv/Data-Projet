@@ -5,6 +5,12 @@
 	    <link rel="stylesheet" href="../css/style.css">
 	    <link rel="stylesheet" href="../css/menu-day.css">
 	    <title>Menu du jour</title>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+	    <link rel="stylesheet" href="../css/style.css">
+	    <link rel="stylesheet" href="../css/menu-day.css">
+	    <title>Menu du jour</title>
 	</head>
 
 	<body>
@@ -81,5 +87,7 @@
 		<footer>
 			<?php include("../include/footer.php") ?>
 		</footer>
+
+		<script type="text/javascript" src="../js/menu-day.js"></script>
 	</body>
 </html>
