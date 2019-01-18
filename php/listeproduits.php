@@ -28,7 +28,7 @@
             $requete = "SELECT urlPhotoPetite_produit, nom_produit, descript_produit FROM PRODUITS JOIN APPARTIENT JOIN CATEGORIES_PRODUITS ON (PRODUITS.id_produit = APPARTIENT.id_produit AND APPARTIENT.id_catégorie = CATEGORIES_PRODUITS.id_catégorie) WHERE CATEGORIES_PRODUITS.id_catégorie =".$cat;  
             
 
-            $bdd = connectbdd();
+            // $bdd = connectbdd();
 
             $req = $bdd->query($requete);
 			$x=1;

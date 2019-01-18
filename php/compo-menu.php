@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/accueil.css">
         <link rel="stylesheet" href="../css/menu-day.css">
 		<title>Accueil</title>
 		<?php 
@@ -26,23 +27,23 @@
 
             <div class="menu" id="tab_1">
                 <div class="aliment"><img class="image" src="https://static.openfoodfacts.org/images/products/376/004/979/4298/front_fr.77.200.jpg" alt="pain"> </div>
-                    
-                    <div class="taux">
-                        <div class="pourcentage">0%</div>
-                        <div id="glucides">Glucides</div>
-                    </div>
-                    <div class="taux">
-                        <div class="pourcentage">0%</div>
-                        <div id="lipides">Lipides</div>
-                    </div>
-                    <div class="taux">
-                        <div class="pourcentage">0%</div>
-                        <div id="proteines">Protéines</div>
-                    </div>
-                    <div class="taux">
-                        <div class="pourcentage">0</div>
-                        <div id="calories">Calories</div>
-                    </div>
+                
+                <div class="taux">
+                    <div class="pourcentage">0%</div>
+                    <div id="glucides">Glucides</div>
+                </div>
+                <div class="taux">
+                    <div class="pourcentage">0%</div>
+                    <div id="lipides">Lipides</div>
+                </div>
+                <div class="taux">
+                    <div class="pourcentage">0%</div>
+                    <div id="proteines">Protéines</div>
+                </div>
+                <div class="taux">
+                    <div class="pourcentage">0</div>
+                    <div id="calories">Calories</div>
+                </div>
             </div>
 
             <div class="menu" id="tab_2">
@@ -65,7 +66,6 @@
                     <div id="calories">Calories</div>
                 </div>
             </div>
-            
             <div id="produits">
 				<form method="post" action="#">
 					<div id="listProduit"> <!-- Bloc contenant les produits créés par la fonction "menu-day.js" -->
