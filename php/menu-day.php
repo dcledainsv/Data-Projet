@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="../css/style.css">
-        <link rel="stylesheet" href="../css/menu-day.css">
-		<title>Accueil</title>
-		<?php 
-    	 
-    	?>
+		<meta charset="UTF-8">
+	    <link rel="stylesheet" href="../css/style.css">
+	    <link rel="stylesheet" href="../css/menu-day.css">
+	    <title>Menu du jour</title>
 	</head>
 
 	<body>
