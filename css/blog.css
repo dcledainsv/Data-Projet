@@ -1,0 +1,90 @@
+section
+{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.titre
+{
+    background-color:#712727;
+    color: #9DBF15;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+	width: 100%;
+	border-radius: 30px;
+	text-align: center;
+	vertical-align: center;
+	display: flex;
+	flex-direction: column ;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+.cereales {
+    background-color: #D58E32;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4em;
+    text-align: justify;
+    border-radius: 30px;
+    padding: 1%;
+    margin-bottom: 1%;
+
+}
+
+.cereales #imgCereale {
+    width: 200px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.proteine {
+    background-color: #EC2E30;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4em;
+    text-align: justify;
+    border-radius: 30px;
+    padding: 1%;
+    margin-bottom: 1%;
+
+}
+
+.proteine #imgProteine {
+    width: 200px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.legume {
+    background-color: #9BCA48;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4em;
+    text-align: justify;
+    border-radius: 30px;
+    padding: 1%;
+    margin-bottom: 1%;
+
+}
+
+.legume #imgLegume {
+    width: 200px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.eau {
+    border-radius: 30px;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+.float {
+    float:left;
+    padding: 2px;
+}
+
+
+
+

@@ -10,7 +10,7 @@
 				<li><a href="">Mon Profil</a></li>
 				<li><a href="../php/menu-day.php">Mes Menus</a></li>
 				<li><a href="../php/categories.php">Produits</a></li>
-				<li><a href="">Blog</a></li>
+				<li><a href="../php/blog.php">Blog</a></li>
 				<li><a href="../php/contact-phpmailer.php">Contact</a></li>
 			</ul>		
 		</li>
