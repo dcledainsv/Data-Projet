@@ -1,0 +1,167 @@
+header{
+    margin-bottom: 10px;
+}
+
+section, ::placeholder {
+    color : white;
+    text-align: center;
+}
+::placeholder{
+    font-style: oblique;
+}
+h1{
+    font-size: 4em;
+    margin-right: 10px;
+    margin-top: 0;
+}
+#titre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.donnee{
+    display: flex;
+    flex-direction: row;
+}
+label {
+    font-size: 2em;
+    width: 35%;
+}
+input, select {
+    text-align: center;
+    background: #9DBF15;
+    width: 60%;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 3em;
+    color :white;
+}
+
+.texte {
+    color:#9DBF15;
+}
+#besoins{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.3em;
+}
+#interro1, #interro2, #interro3{
+    width: 50px;
+    height: 50px;
+}
+#modal1, #modal2, #modal3{
+    display: none;
+    z-index: 2;
+    position: absolute;
+    background-color:#9DBF15;
+    border: #712727 1px solid;
+    border-radius: 20px;
+    padding: 10px;
+    color: #712727;
+    font-size: 2.7em; 
+    width: 95%;
+    left: 1%;
+}
+#modal1{
+    top:40%;
+}
+#modal2{
+    top:40%;
+    text-align: left;
+}
+#modal3{
+    top: 20%;
+    text-align: left;
+}
+h2{
+    font-size: 1em;
+    text-decoration-line: underline;
+}
+ul{
+    list-style: none;
+    padding-left: 10px;
+}
+
+#oblig{
+    text-align: right;
+    margin-bottom: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 2em;
+}
+
+.haut, .bas {
+    width: 90%;
+    margin-top: 100px;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 1px solid #712727;
+    background-color: #712727;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+input[type=radio] {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+}
+#genre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 3em;
+}
+#labgenre{
+    width: 20%;
+   
+}
+select {
+    font-size: 2.5em;
+    padding: 10px 20px;
+    /* -webkit-appearance: none; Retirer la flèche de la liste déroulante */
+    text-align-last: center;
+}
+#accord{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+input[type=checkbox]{   
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+}
+#accordtext{
+    font-size: 2.3em;
+}
+input[type=submit]{
+    color:#712727;
+    font-weight: bold;
+    padding:0 20px;
+    border-radius: 30px;
+    box-shadow: #712727 0 4px 10px;
+}
+section{
+    margin-bottom: 120px;
+}
+
+#reponse{
+    color:#712727;
+    /* z-index: 2;
+    position: absolute; */
+    /* background-color:#9DBF15; */
+    /* border: #712727 1px solid; */
+    /* border-radius: 20px; */
+    padding: 10px;
+    font-size: 2.7em; 
+    width: 90%;
+    margin-left: 5%;
+    /* left: 1%; */
+    /* top: 50%;
+    display:none; */
+}
