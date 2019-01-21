@@ -1,3 +1,36 @@
+<!-- traitement du formulaire -->
+<?php
+	session_start();
+
+	if (isset($_POST['formConnexion']))
+	{
+		$pseudoConnect = htmlspecialchars($_POST['pseudo']);
+		$passConnect = $_POST['psw'];
+
+		if (!empty($pseudoConnect) AND empty(!$passConnect))
+		{
+			include ("request/logbdd.php"); // Inclue le fichier pour connexion à la base de donnée
+
+			$reqUser = $bdd->prepare("SELECT * FROM MEMBRES WHERE pseudo_membre = ? AND password_membre = ?");
+			$reqUser->execute(array($pseudoConnect, $passConnect));
+			$userExist = $reqUser->rowCount();
+
+			if ($userExist === 1) // Si les identifiants existent
+			{
+				$userInfo = $reqUser->fetch();
+				$_SESSION['id'] = $userInfo['id_membre'];
+				$_SESSION['pseudo'] = $userInfo['pseudo_membre'];
+				$_SESSION['psw'] = $userInfo['password_membre'];
+				header("Location: index.php?id=" . $_SESSION['id']);
+			}
+			else
+			{
+				$erreur = "Ces identifiants n'existent pas !";
+			}
+			
+		}  // else { pas besoin de else ==> car "required" des input. Donc oblige le champ de texte }
+	}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -14,7 +47,7 @@
 			<nav>
 				<ul>
 					<li>
-						<img src="img/menu-hamburger.png" class="menu-hamb-logo">
+						<img src="./img/menu-hamburger.png" class="menu-hamb-logo">
 						
 						<ul class="submenu">
 							<li><a href="index.php">Accueil</a></li>
@@ -27,12 +60,11 @@
 					</li>
 				</ul>
 
-				<div id="login">
-					<p>Connexion / <br/>Inscription</p>
-				</div>
+				
+				<div id="login">Connexion / inscription</div>
 			</nav>
 		</header>
-		
+
 		<section>
 			<div>
 				<img src="img/ferme.png" alt="Bannière d'image du site" class="image-banner">
@@ -56,6 +88,8 @@
 					<img src="img/nutri-b.png">
 				</div>
 			</div>
+
+				<?php echo '<font color="red">' . $erreur . '</font>'; ?>
 		</section>
 
 		<footer>
@@ -69,24 +103,25 @@
 		<!-- If clic inscription => Modale -->
 		<div id="modaleLog">
 			<div id="log">
-				<form>
-					<label for="nomUtilisateur">Nom d'utilisateur : </label> <br />
-					<input type="text" name="" id="nomUtilisateur">
+				<form action="index.php" method="post">
+					<label for="nomUtilisateur">Pseudo : </label> <br />
+					<input type="text" name="pseudo" required="">
 
-					<label for="nomUtilisateur">Mot de passe : </label> <br />
-					<input type="password" name="" id="nomUtilisateur"> <br />
+					<label for="motDePasse">Mot de passe : </label> <br />
+					<input type="password" name="psw" required> <br />
 
 					<div>
-						<input type="submit" name="subm" value="Connexion">
+						<input type="submit" name="formConnexion" value="Connexion">
 					</div>
 				</form>
 				
 				<div>
-					<a href="php/formulaireInscription.php">Créer un compte ?</a>
+					<a href="php/inscription.php">Créer un compte ?</a>
 				</div>
 			</div>
 		</div>
 		<!-- End Modale -->
+
 		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>

@@ -51,11 +51,12 @@
                 <input type="submit" class="input" name="jeMinscris" value="Je m'inscris"> 
             </form>
         </section>
-
     <?php
     // définir les variables avec des valeurs vides
     $pseudoErr = $motDePasseErr = $confMotDePasseErr = $emailErr = $nomErr = $prenomErr = $dateDeNaissanceErr = $sexeErr = $tailleErr = $poidsErr = $activite = "";
     $pseudo = $motDePasse = $confMotDePasse = $email = $nom = $prenom = $dateDeNaissance = $sexe = $taille = $poids = $activite = "";
+
+
 
     if (isset($_POST["jeMinscris"]))
     {
@@ -89,11 +90,11 @@
 
         if (empty($_POST["confMotDePasse"]))
         {
-            echo "La confirmation du mot de passe est requiss" . "<br />"; // Champ vide
+            echo "La confirmation du mot de passe est requise" . "<br />"; // Champ vide
         }
         else
         {
-            $confMotDePasse= test_input($_POST["confMotDePasse"]);
+            $confMotDePasse = test_input($_POST["confMotDePasse"]);
             // vérif si mot de passe identique 
             if ( $_POST["confMotDePasse"] != $_POST["motDePasse"])
             {
