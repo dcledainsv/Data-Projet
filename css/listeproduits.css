@@ -1,7 +1,9 @@
 
 #listeCat{
     margin-left: 20px;
-    
+}
+h1{
+    font-size: 3.5em;
 }
 .produit{
     display: flex;
@@ -10,7 +12,7 @@
 }
 .image{
     width: 200px;
-    height: 200px;
+    height: 250px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
@@ -18,17 +20,19 @@
     display:flex;
     flex-direction: column;
     background-color: #712727;
-    padding-left:10px;
-    padding-top: 10px;
+    padding:10px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     flex: 1;
     margin-right: 20px;
     color: #9dbf15;
-    font-size: 2.5em;
+    font-size: 2.4em;
     font-weight: bold;
+    justify-content: center;
 }
 .text .descrip{
-    font-size: 0.4em;
+    font-size: 0.5em;
 }
-   
+section{
+    margin-bottom: 120px;
+}

@@ -1,8 +1,10 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/listeproduits.css">
     <title>liste des produits</title>
@@ -39,7 +41,7 @@
                 echo "<input type='hidden' id='idprod".$x."' value='".$data['id_produit']."'/>";
                 $x++;
             }
-            echo $x;
+
             // récupération du nombre de produit
             echo "<input type='hidden' id='variableAPasser' value='".$x."'/>";
             ?>

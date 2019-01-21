@@ -4,8 +4,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/produit.css">
     <title>produit</title>
@@ -71,7 +70,7 @@
             echo "<input type='hidden' id='part' value='".$part['valeur_portion']."'/>";
 
             // affichage calorie, glucides, lipides, protéines
-            echo "<p> <strong>Calorie pour 100g </strong> : ".$prodChoisi['calorie_100g']." cal</p>";
+            echo "<p><strong> Calorie pour 100g </strong> : ".$prodChoisi['calorie_100g']." cal</p>";
             echo "<p><strong> Lipides pour 100g </strong>: ".$prodChoisi['lipides_100g']." g</p>";
             echo "<p><strong> Glucides pour 100g </strong>: ".$prodChoisi['glucides_100g']." g</p>";
             echo "<p><strong> Protéines pour 100g</strong> : ".$prodChoisi['protéines_100g']." g</p>";
@@ -108,25 +107,37 @@
             }
             echo "</p>";
 
-            // stockage de l'id du produit 
-            $_SESSION['id_prod'] = $prodChoisi['id_produit'] ;
+       
+
             ?>
         
         </div>
         <div id="boutons">
-            <form action="" method="post">
-                <input type="hidden" name="addmenu" value= <?php $prodChoisi['id_produit'] ?>>  
-                <input type="submit" value="Ajouter au menu">  
-            </form>
+            <!-- transmission des infos du produit dans formulaire caché -->
+        <form action="panier.php" method="post">
 
-            <form action="" method="post">
-                <input type="hidden" name="addfavoris" value= <?php $prodChoisi['id_produit'] ?>>
+                <input type="hidden" name="idProduit" value= <?php $idprod ?>>
+                <input type="hidden" name="nomProduit" value= <?php $prodChoisi['nom_produit'] ?>>
+                <input type="hidden" name="photoProduit" value= <?php $prodChoisi['urlPhotoPetite_produit'] ?>>
+                <input type="hidden" name="calorieProduit" value= <?php $prodChoisi['calorie_100g'] ?>>
+                <input type="hidden" name="lipidesProduit" value= <?php $prodChoisi['lipides_100g'] ?>>
+                <input type="hidden" name="glucidesProduit" value= <?php $prodChoisi['glucides_100g'] ?>>
+                <input type="hidden" name="proteinesProduit" value= <?php $prodChoisi['protéines_100g'] ?>>
+                <input type="hidden" name="portionProduit" value= <?php $part['valeur_portion'] ?>>
+                <input type="hidden" name="qteProduit" value= <?php $quant['valeur_quantitéProduit'] ?>>
+                <input type="hidden" name="poidsProduit" value= <?php $poids['valeur_poidsProduits'] ?>>
+                <input type="hidden" name="uniteProduit" value= <?php $unit['abrev_unité'] ?>>
+                <input type="submit" value="Ajouter au menu" >
+        </form>   
+
+            <form action="favoris.php" method="post">
+                <input type="hidden" name="addfavoris" value= <?php $idprod ?>>
                 <input type="submit" value="Ajouter à mes favoris">   
             </form>
         </div>
         <div id="liens">
-            <a href="../menu.php">Voir mon menu</a>
-            <a href="../catégories.php">Choisir un autre produit</a>
+            <a href="panier.php">Voir mon menu</a>
+            <a href="categories.php">Choisir un autre produit</a>
         </div>
 
     </section>
@@ -136,5 +147,6 @@
     </footer>
 
 <script src="../js/produit.js"></script>    
+
 </body>
 </html>
