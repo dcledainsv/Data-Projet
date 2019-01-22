@@ -36,7 +36,7 @@
 				while ($donnees = $reponse->fetch())
 				{
 				// echo $donnees['nom_activité'] . '<br />';
-				echo '<tr><td>'.$donnees['id_activité'] .'</td><td>'.$donnees['nom_activité'] .'</td><td>17 Mars 2018</td><td><input type="submit" value="Modifier"></td></tr>';
+				echo '<tr><td>'.$donnees['id_activité'] .'</td><td>'.$donnees['nom_activité'] .'</td><td>17 Mars 2018</td><td><input type="submit" value="Voir"></td></tr>';
 
 				}
 

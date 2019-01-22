@@ -1,0 +1,189 @@
+section
+{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.titre
+{
+    background-color:#712727;
+    color: #9DBF15;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+	width: 100%;
+	border-radius: 30px;
+	text-align: center;
+	vertical-align: center;
+	display: flex;
+	flex-direction: column ;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+
+/* td {
+	padding: 1px;
+} */
+/* tr + tr td {
+	border-top: solid 1px #5D1212;
+} */
+
+tr:first-child td:first-child {
+	/* border-top-left-radius: 14px; */
+	border-radius: 14px 0 0 0;
+}
+tr:first-child td:last-child {
+  border-radius: 0 14px 0 0;
+}
+tr:last-child td:first-child {
+  border-radius: 0 0 0 14px;
+}
+tr:last-child td:last-child {
+  border-radius: 0 0 14px 0;
+}
+
+.tftable {
+    font-size: .8em;
+	margin: 0 auto;
+	width: 100%;
+	background-color: #9DBF15;
+	border: solid 1px #9DBF15;
+	border-collapse: separate;
+	border-spacing: 0;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.tftable th {
+    font-size:12px;
+    background-color:#9DBF15;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #9DBF15;
+    text-align:left;
+    border-radius: 16px;
+    text-align: center;   
+}
+
+.tftable tr {
+    background-color:#bedda7;
+}
+
+.tftable td {
+    font-size:12px;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #9DBF15;
+}
+
+.tftable tr:hover {
+    background-color:#712727;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cereales {
+    background-color: #D58E32;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4em;
+    text-align: justify;
+    border-radius: 30px;
+    padding: 1%;
+    margin-bottom: 1%;
+
+}
+
+.cereales #imgCereale {
+    width: 200px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.proteine {
+    background-color: #EC2E30;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4em;
+    text-align: justify;
+    border-radius: 30px;
+    padding: 1%;
+    margin-bottom: 1%;
+
+}
+
+.proteine #imgProteine {
+    width: 200px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.legume {
+    background-color: #9BCA48;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4em;
+    text-align: justify;
+    border-radius: 30px;
+    padding: 1%;
+    margin-bottom: 1%;
+
+}
+
+.legume #imgLegume {
+    width: 200px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.eau {
+    border-radius: 30px;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+.float {
+    float:left;
+    padding: 2px;
+}
+
+
+
+
