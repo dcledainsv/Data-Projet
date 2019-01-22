@@ -17,11 +17,15 @@
 	{
 		$log = $userInfo['pseudo_membre'] . ' <a href="../request/deco.php">Deconnexion</a>';
 		$lienAccueil = "accueil.php?id=" . $_SESSION['id'];
+		$lienMenu = "mesmenus.php?id=" . $_SESSION['id'];
+		$lienBlog = "blog.php?id=" . $_SESSION['id'];
 	}
 	else
 	{
 		$log = '<a href="login.php">Connexion / Inscription</a>';
 		$lienAccueil = "accueil.php";
+		$lienMenu = "mesmenus.php";
+		$lienBlog = "blog.php";
 	}
 
 ?>
@@ -33,21 +37,12 @@
 			<img src="./../img/menu-hamburger.png" class="menu-hamb-logo">
 			
 			<ul class="submenu">
-<<<<<<< HEAD
-				<li><a href="../index.php">Accueil</a></li>
-				<li><a href="">Mon Profil</a></li>
-				<li><a href="../php/menu-day.php">Mes Menus</a></li>
-				<li><a href="../php/categories.php">Produits</a></li>
-				<li><a href="../php/blog.php">Blog</a></li>
-				<li><a href="../php/contact-phpmailer.php">Contact</a></li>
-=======
 				<li><a href="<?php echo $lienAccueil; ?>">Accueil</a></li>
 				<li><a href="<?php echo '//'; ?>">Mon Profil</a></li>
-				<li><a href="menu-day.php">Mes Menus</a></li>
+				<li><a href="<?php echo $lienMenu; ?>">Mes Menus</a></li>
 				<li><a href="categories.php">Produits</a></li>
-				<li><a href="">Blog</a></li>
+				<li><a href="<?php echo $lienBlog; ?>">Blog</a></li>
 				<li><a href="contact-phpmailer.php">Contact</a></li>
->>>>>>> edains
 			</ul>		
 		</li>
 

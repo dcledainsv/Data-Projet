@@ -4,10 +4,6 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-<<<<<<< HEAD
-    
-=======
->>>>>>> profil
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/produit.css">
     <title>produit</title>
@@ -80,22 +76,22 @@
             echo "<p><strong> Sel pour 100g</strong> : ".$prodChoisi['sel_100g']." g</p>";
 
             // requete et affichage pour les allergenes présents
-            $requete2 = "SELECT nom_allergene FROM ALLERGENES JOIN CONTIENT JOIN PRODUITS ON (ALLERGENES.id_allergenes = CONTIENT.id_allergenes AND CONTIENT.id_produit = PRODUITS.id_produit) WHERE PRODUITS.id_produit =".$idprod;
+            $requete2 = "SELECT nom_allergène FROM ALLERGENES JOIN CONTIENT JOIN PRODUITS ON (ALLERGENES.id_allergènes = CONTIENT.id_allergènes AND CONTIENT.id_produit = PRODUITS.id_produit) WHERE PRODUITS.id_produit =".$idprod;
             $req2 = $bdd->query($requete2);
             echo "<p><strong> Allergènes</strong> : ";
             $a=1;
             while($allerg = $req2->fetch()){
-            echo $allerg['nom_allergene']." ";
+            echo $allerg['nom_allergène']." ";
             $a++;
             }
             echo "</p>";
             // requete et affichage pour les traces d'allergenes
-            $requete3 = "SELECT nom_allergene FROM ALLERGENES JOIN TRACES JOIN PRODUITS ON (ALLERGENES.id_allergenes = TRACES.id_allergenes AND TRACES.id_produit = PRODUITS.id_produit) WHERE PRODUITS.id_produit =".$idprod;
+            $requete3 = "SELECT nom_allergène FROM ALLERGENES JOIN TRACES JOIN PRODUITS ON (ALLERGENES.id_allergènes = TRACES.id_allergènes AND TRACES.id_produit = PRODUITS.id_produit) WHERE PRODUITS.id_produit =".$idprod;
             $req3 = $bdd->query($requete3);
             echo "<p><strong> Traces</strong> : ";
             $b=1;
             while($traces = $req3->fetch()){
-            echo $traces['nom_allergene']." ";
+            echo $traces['nom_allergène']." ";
             $b++;
             }
             echo "</p>";

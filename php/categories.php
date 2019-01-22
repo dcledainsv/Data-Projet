@@ -1,8 +1,4 @@
 <?php session_start(); ?>
-<<<<<<< HEAD
-
-=======
->>>>>>> edains
 <!DOCTYPE html>
 <html lang="fr">
 <head>
