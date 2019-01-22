@@ -8,7 +8,7 @@ include("logbdd.php");
 $idMembre= $_SESSION['id'];
 
 // requête pour infos du membre connecté
-$requete = "SELECT * FROM MEMBRES WHERE id_membre = 1 ";        // .$idMembre;
+$requete = "SELECT * FROM MEMBRES WHERE id_membre =".$idMembre;
 // exécution de la requête
 $req = $bdd->query($requete);
 $membre = $req->fetch();

@@ -17,15 +17,21 @@
 	{
 		$log = $userInfo['pseudo_membre'] . ' <a href="../request/deco.php">Deconnexion</a>';
 		$lienAccueil = "accueil.php?id=" . $_SESSION['id'];
+		$profil = "profil.php?id=" . $_SESSION['id'];
 		$lienMenu = "mesmenus.php?id=" . $_SESSION['id'];
+		$produit = "categories.php?id=" . $_SESSION['id'];
 		$lienBlog = "blog.php?id=" . $_SESSION['id'];
+		$contact = "contact-phpmailer.php?id=" . $_SESSION['id'];
 	}
 	else
 	{
 		$log = '<a href="login.php">Connexion / Inscription</a>';
 		$lienAccueil = "accueil.php";
+		$profil = "profil.php";
 		$lienMenu = "mesmenus.php";
+		$produit = "categories.php";
 		$lienBlog = "blog.php";
+		$contact = "contact-phpmailer.php";
 	}
 
 ?>
@@ -38,11 +44,11 @@
 			
 			<ul class="submenu">
 				<li><a href="<?php echo $lienAccueil; ?>">Accueil</a></li>
-				<li><a href="<?php echo '//'; ?>">Mon Profil</a></li>
+				<li><a href="<?php echo $profil; ?>">Mon Profil</a></li>
 				<li><a href="<?php echo $lienMenu; ?>">Mes Menus</a></li>
-				<li><a href="categories.php">Produits</a></li>
+				<li><a href="<?php echo $produit; ?>">Produits</a></li>
 				<li><a href="<?php echo $lienBlog; ?>">Blog</a></li>
-				<li><a href="contact-phpmailer.php">Contact</a></li>
+				<li><a href="<?php echo $contact; ?>">Contact</a></li>
 			</ul>		
 		</li>
 

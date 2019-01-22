@@ -3,9 +3,9 @@
 var imgns = document.getElementById('imgNS');
 var ns = document.getElementById('valNS').value;
 if (ns == 'A'){
-    imgns.innerHTML = "<img src='../img/nutri-a.png'/>";
+    imgns.innerHTML = "<img src='../img/nutriscore-a.png'/>";
 } else {
-    imgns.innerHTML = "<img src='../img/nutri-b.png'/>";
+    imgns.innerHTML = "<img src='../img/nutriscore-b.png'/>";
 }
 
 // portion si oeufs

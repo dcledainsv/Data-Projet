@@ -4,6 +4,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/produit.css">
     <title>produit</title>
@@ -114,18 +115,17 @@
         <div id="boutons">
             <!-- transmission des infos du produit dans formulaire caché -->
         <form action="panier.php" method="post">
-
-                <input type="hidden" name="idProduit" value= <?php $idprod ?>>
-                <input type="hidden" name="nomProduit" value= <?php $prodChoisi['nom_produit'] ?>>
-                <input type="hidden" name="photoProduit" value= <?php $prodChoisi['urlPhotoPetite_produit'] ?>>
-                <input type="hidden" name="calorieProduit" value= <?php $prodChoisi['calorie_100g'] ?>>
-                <input type="hidden" name="lipidesProduit" value= <?php $prodChoisi['lipides_100g'] ?>>
-                <input type="hidden" name="glucidesProduit" value= <?php $prodChoisi['glucides_100g'] ?>>
-                <input type="hidden" name="proteinesProduit" value= <?php $prodChoisi['protéines_100g'] ?>>
-                <input type="hidden" name="portionProduit" value= <?php $part['valeur_portion'] ?>>
-                <input type="hidden" name="qteProduit" value= <?php $quant['valeur_quantitéProduit'] ?>>
-                <input type="hidden" name="poidsProduit" value= <?php $poids['valeur_poidsProduits'] ?>>
-                <input type="hidden" name="uniteProduit" value= <?php $unit['abrev_unité'] ?>>
+                <input type="hidden" name="idProduit" value= " <?php echo $idprod; ?> ">
+                <input type="hidden" name="nomProduit" value= "<?php echo $prodChoisi['nom_produit']; ?>">
+                <input type="hidden" name="photoProduit" value= "<?php echo $prodChoisi['urlPhotoPetite_produit']; ?>">
+                <input type="hidden" name="calorieProduit" value= "<?php echo $prodChoisi['calorie_100g']; ?>">
+                <input type="hidden" name="lipidesProduit" value= "<?php echo $prodChoisi['lipides_100g']; ?>">
+                <input type="hidden" name="glucidesProduit" value= "<?php echo $prodChoisi['glucides_100g']; ?>">
+                <input type="hidden" name="proteinesProduit" value= "<?php echo $prodChoisi['protéines_100g']; ?>">
+                <input type="hidden" name="portionProduit" value= "<?php echo $part['valeur_portion']; ?>">
+                <input type="hidden" name="qteProduit" value= "<?php echo $quant['valeur_quantitéProduit']; ?>">
+                <input type="hidden" name="poidsProduit" value= "<?php echo $poids['valeur_poidsProduits']; ?>">
+                <input type="hidden" name="uniteProduit" value= "<?php echo $unit['abrev_unité']; ?>">
                 <input type="submit" value="Ajouter au menu" >
         </form>   
 
