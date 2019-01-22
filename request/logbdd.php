@@ -7,7 +7,7 @@
 	try
 	{
 	        $bdd = new PDO($dbn, $user, $pass);
-	        // echo "Connecté ";
+	         // echo "Connecté ";
 	}
 	catch (Exception $e)
 	{
