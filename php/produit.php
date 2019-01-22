@@ -4,7 +4,10 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     
+=======
+>>>>>>> profil
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/produit.css">
     <title>produit</title>

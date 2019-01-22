@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-	    <link rel="stylesheet" href="../css/style.css">
-	    <link rel="stylesheet" href="../css/menu-day.css">
-	    <title>Menu du jour</title>
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8">
