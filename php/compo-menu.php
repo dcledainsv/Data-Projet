@@ -6,9 +6,6 @@
         <link rel="stylesheet" type="text/css" href="../css/accueil.css">
         <link rel="stylesheet" href="../css/menu-day.css">
 		<title>Accueil</title>
-		<?php 
-    	 
-    	?>
 	</head>
 
 	<body>
