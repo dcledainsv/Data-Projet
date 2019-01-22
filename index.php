@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/accueil.css">
-		<title>Accueil</title>
-	</head>
+<?php
+	session_start();
 
+<<<<<<< HEAD
 	<body>
 		<header>
 			<a href="index.php"><img src="img/logo-bio-miam-horizon.png" alt="Titre du site et logo" class="logo-header"></a>
@@ -90,3 +85,7 @@
 		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
+=======
+	header("Location: php/accueil.php");
+?>
+>>>>>>> edains

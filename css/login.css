@@ -1,0 +1,78 @@
+/* ********** Formulaire de connexion ********** */
+#log
+{
+	background-image: url("./../img/ferme-modale.png");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	margin-top: 15%;
+	padding-bottom: 5%;
+	width: 85%;
+	height: auto;
+	font-size: 1.6em;
+	font-weight: bold;
+	border: 2px solid black;
+	color: #712727;
+}
+
+#log > form
+{
+	font-size: 1.5em;
+	width: 90%;
+	margin: auto;
+	padding-top: 5%;
+}
+
+#log > form input
+{
+	font-size: 1.2em;
+	width: 100%;
+	height: 50px;
+	border: 1px solid black;
+	border-radius: 50px;
+	text-indent: 10%;
+	margin-bottom: 3%;
+}
+
+#log > form > div
+{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 50px;
+}
+
+#log > form > div > input
+{
+	font-size: 1.1em;
+	text-indent: 0;
+	line-height: 50px;
+	width: 60%;
+	height: 100%;
+	margin-top: 5%;
+}
+
+#log > div
+{
+	width: 90%;
+	margin: auto;
+	padding-top: 10%;
+}
+
+#log a
+{
+	font-size: 1.5em;
+	color: #712727;
+}
+
+#log p
+{
+	color: red;
+	font-size: 1.3em;
+	text-align: center;
+}
+
+h1
+{
+	font-size: 3.5em;
+}
