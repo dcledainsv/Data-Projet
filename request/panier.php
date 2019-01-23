@@ -1,5 +1,5 @@
 <?php    
-// session_start(); 
+session_start(); 
 
 // création d'un panier s'il n'existe pas déjà
 if (!isset($_SESSION['panier'])){
