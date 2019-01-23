@@ -47,7 +47,14 @@ var valBJ = document.getElementById('valBJ').value;
 var valCalMenu = document.getElementById('valCalMenu').value;
 
 // changement couleur de fond si apport > besoins
-if (valCalMenu > valBJ){
+console.log(valCalMenu);
+console.log(valBJ);
+
+if (valCalMenu < valBJ){ 
+    calMenu.style.backgroundColor = '#9dbf15d';
+    calMenu.style.color = '#712727';
+    
+} else {
     calMenu.style.backgroundColor = 'red';
     calMenu.style.color = 'black';
 }

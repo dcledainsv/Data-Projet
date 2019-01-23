@@ -51,6 +51,7 @@
             $requete6 = "SELECT valeur_quantitéProduit FROM QUANTITE_PRODUIT JOIN PRODUITS ON (QUANTITE_PRODUIT.id_quantitéProduit = PRODUITS.id_quantitéProduit) WHERE PRODUITS.id_produit =".$idprod;
             $req6 = $bdd->query($requete6);        
             $quant = $req6->fetch();
+             
             //requete poids produit
             $requete7 = "SELECT valeur_poidsProduits FROM POIDS_PRODUIT JOIN PRODUITS ON (POIDS_PRODUIT.id_poidsProduits = PRODUITS.id_poidsProduits) WHERE PRODUITS.id_produit =".$idprod;
             $req7 = $bdd->query($requete7);        
@@ -114,7 +115,7 @@
         </div>
         <div id="boutons">
             <!-- transmission des infos du produit dans formulaire caché -->
-        <form action="panier.php" method="post">
+        <form action="../request/panier.php" method="post">
                 <input type="hidden" name="idProduit" value= " <?php echo $idprod; ?> ">
                 <input type="hidden" name="nomProduit" value= "<?php echo $prodChoisi['nom_produit']; ?>">
                 <input type="hidden" name="photoProduit" value= "<?php echo $prodChoisi['urlPhotoPetite_produit']; ?>">
@@ -129,16 +130,16 @@
                 <input type="submit" value="Ajouter au menu" >
         </form>   
 
-            <form action="favoris.php" method="post">
-                <input type="hidden" name="addfavoris" value= <?php $idprod ?>>
+            <form action="" method="post">
+                <input type="hidden" name="addfavoris" value= <?php echo $idprod; ?> >
                 <input type="submit" value="Ajouter à mes favoris">   
             </form>
         </div>
         <div id="liens">
-            <a href="panier.php">Voir mon menu</a>
+            <a href="menu.php">Voir mon menu</a>
             <a href="categories.php">Choisir un autre produit</a>
         </div>
-
+        <?php  include("../request/favoris.php")   ?>
     </section>
 
     <footer>

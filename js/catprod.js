@@ -1,4 +1,5 @@
 // déclaration des variables
+var favoris = document.getElementById("favoris");
 var cat = [];
 
 for (i=1;i<38;i++) {
@@ -6,6 +7,10 @@ for (i=1;i<38;i++) {
 }
 
 // envoi de la catégorie cliquée via url
+favoris.addEventListener("click",function(){
+    document.location.href="listeproduits.php?cat=0";
+})
+
 for (i=1;i<38;i++){
 j=i;
     (function(j){

@@ -1,5 +1,5 @@
 <?php session_start(); 
-include("panier.php"); ?>
+include("../request/panier.php"); ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -20,6 +20,7 @@ include("panier.php"); ?>
     <h1>Composition du menu</h1>
 
     <?php
+    // echo $_SESSION['id'];
     //  var_dump($_SESSION['panier']);
      $panier = $_SESSION['panier'];
      // compte du nombre de produit = nbre de ligne dans tableau $panier
@@ -69,9 +70,16 @@ include("panier.php"); ?>
     <form action="" method="post">
         <label for="nomMenu">nom du menu :</label>
         <input type="text" name="nomMenu" required>
+        <?php   
+        // id des produits  + nbre portions (0.5 , 1 , 1.5  ou  2)  pour chacun
+            for ($i=0; $i < $nbre; $i++){
+                echo " <input type='hidden' name='idprod".$i."' value='".$panier['idProduit'][$i]."'>";
+                echo " <input type='hidden' name='portion".$i."' value='1' >";
+            }
+        ?>
         <input type="submit" value="Enregistrer">
     </form>
-
+    <?php   include ("../request/enregistrMenu.php") ?>
     <!-- requête infos du membre connecté et calcul de ses besoins journaliers $bj -->
     <?php
         include ("../request/calculBJ.php");
@@ -145,6 +153,7 @@ include("panier.php"); ?>
 <footer>
     <?php include("../include/footer.php") ?>
 </footer>
+
    <script src="../js/menu.js"></script> 
 </body>
 </html>    

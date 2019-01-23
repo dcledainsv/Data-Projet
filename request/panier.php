@@ -1,4 +1,5 @@
-<?php session_start(); 
+<?php    
+// session_start(); 
 
 // création d'un panier s'il n'existe pas déjà
 if (!isset($_SESSION['panier'])){
@@ -68,7 +69,7 @@ if (isset($_POST['idProduit']) AND
     array_push( $_SESSION['panier']['uniteProduit'],$uniteProduit);
                 
       // redirection vers page composition menu
-      header ('location: menu.php');      
+      header ('location: ../php/menu.php');      
 }
  // var_dump($_SESSION['panier']);
 
