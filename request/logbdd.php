@@ -1,19 +1,32 @@
 <?php
-	// function connectBdd()
+
+	// $dbn = "mysql:dbname=db769412596;host=127.0.0.1";
+	// $user = "dcl.edainsv";
+	// $pass = "TPdev_log";
+	
+	// try
 	// {
-		$dbn = "mysql:dbname=BioMiam;host=127.0.0.1";
-		$user = "sylvieg";
-		$pass = "MySQL_gs18";
-
-		try
-		{
-			$bdd = new PDO($dbn, $user, $pass);	
-		}
-		catch (PDOException $e)
-		{
-			echo "Connexion à la base de donnée échouée : " . $e->getMessage();
-		}
-
-	// 	return $bdd;
+	//         $bdd = new PDO($dbn, $user, $pass);
+	//          // echo "Connecté ";
 	// }
+	// catch (Exception $e)
+	// {
+	//         die('Erreur : ' . $e->getMessage());
+	// }
+	 
 ?>
+
+<?php
+try
+{
+        $bdd = new PDO('mysql:host=db769412596.hosting-data.io;dbname=db769412596;charset=utf8', 'dbo769412596', 'AtosAfo18');
+        $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+}
+catch (Exception $e)
+{
+        die('Erreur : ' . $e->getMessage());
+}
+
+?>
+
+
